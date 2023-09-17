@@ -9,6 +9,10 @@ export const router = createBrowserRouter([
         element: <MainLayout/>,
         children: [
             {
+                index:true,
+                element:<MoviesPage/>
+            },
+            {
                 path: 'movies',
                 element: <MoviesPage/>
             },
