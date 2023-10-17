@@ -9,7 +9,7 @@ const MovieByName = () => {
     const location = useLocation();
     const name = new URLSearchParams(location.search).get('name')
 
-    const {movieByName} = useSelector(state => state.movie);
+    const {movieByName} = useSelector(state => state.movies);
     const dispatch = useDispatch();
 
     useEffect(() => {
